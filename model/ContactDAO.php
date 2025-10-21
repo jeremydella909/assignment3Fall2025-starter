@@ -36,10 +36,10 @@
             return $contacts;
         }
 
-        public function delContact($contact){
+        public function delContact($contactID){
             $connection=$this->getConnection();
             $stmt = $connection->prepare("DELETE FROM contacts WHERE contactID = ?");
-            $stmt->bind_param("i", $contact->contactID);
+            $stmt->bind_param("i", $contactID);
             $stmt->execute();
             $stmt->close();
             $connection->close();

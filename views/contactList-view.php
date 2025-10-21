@@ -32,6 +32,7 @@
                         <td><?php echo $contacts[$index]->contactID ?></td>
                         <td><?php echo $contacts[$index]->username ?></td>
                         <td><?php echo $contacts[$index]->email ?></td>
+                        <td><a class="btn btn-primary" href="contactDelController.php?contactID=<?php echo $contacts[$index]->contactID ?>" role="button">Delete</a></td>
                     </tr>
                     <?php
                         }

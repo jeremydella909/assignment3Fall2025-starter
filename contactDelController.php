@@ -4,13 +4,17 @@
     //************************
     //*  Contoller Template  *
     //************************
-    showErrors(0);  //1 - Turn on Error Display
+    showErrors(1);  //1 - Turn on Error Display
 
     $method=$_SERVER['REQUEST_METHOD'];
     //* Process HTTP GET Request
     if($method=='GET'){
+        $contactID = $_GET['contactID'];
         $contactDAO = new ContactDAO();
-        $contactDAO->delContact(1);
+        $contactDAO->delContact($contactID);
+
+        header("Location: contactListController.php");
+        exit;
     }
     
     //* Process HTTP POST Request
