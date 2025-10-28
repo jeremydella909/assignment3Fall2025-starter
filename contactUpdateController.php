@@ -10,6 +10,10 @@
     //* Process HTTP GET Request
     if($method=='GET'){
         $contactID = $_GET['contactID'];
+        if($contactID==null || $contactID==""){
+            header("Location: contactListController.php");
+            exit;
+        }
         include 'views/contactUpdate-view.php';
         exit;
 

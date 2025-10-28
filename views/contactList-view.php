@@ -33,7 +33,7 @@
                         <td><?php echo $contacts[$index]->username ?></td>
                         <td><?php echo $contacts[$index]->email ?></td>
                         <td><a class="btn btn-primary" href="contactDelController.php?contactID=<?php echo $contacts[$index]->contactID ?>" role="button">Delete</a></td>
-                        <td><a class="btn btn-primary" href="contactUpdateController.php?contactID=<?php echo $contacts[$index]->contactID ?>" role="button">TestUpdate</a></td>
+                        <td><a class="btn btn-primary" href="contactUpdateController.php?contactID=<?php echo $contacts[$index]->contactID ?>" role="button">Update</a></td>
                     </tr>
                     <?php
                         }
