@@ -25,9 +25,9 @@
                             <label for="contactID" class="form-label">ID</label>
                             <input type="text" id="contactID" name="contactID" value="<?php echo $contactID ?>" readonly class="form-control mb-3">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control mb-3" id="username" name="username" placeholder="Enter new Username" required>
+                            <input type="text" class="form-control mb-3" id="username" name="username" placeholder="<?php echo $username?>" required>
                             <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control mb-3" id="email" name="email" placeholder="Enter new Email Address" required>
+                            <input type="text" class="form-control mb-3" id="email" name="email" placeholder="<?php echo $email?>" required>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>

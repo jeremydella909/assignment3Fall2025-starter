@@ -10,6 +10,8 @@
     //* Process HTTP GET Request
     if($method=='GET'){
         $contactID = $_GET['contactID'];
+        $username = $_GET['username'];
+        $email = $_GET['email'];
         if($contactID==null || $contactID==""){
             header("Location: contactListController.php");
             exit;
